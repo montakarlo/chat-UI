@@ -1,0 +1,45 @@
+header
+  @include unselectable
+  background-color: #ffffff
+  height: 63px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  font-family: 'Roboto'
+  font-size: 13px
+  padding: 0 40px
+  color: #252F48
+  letter-spacing: 0.685714px
+  line-height: 15px
+  border-bottom: 1px solid #DAE4F2;
+.navBlock
+  margin-top: 6px
+  &>span
+    @include pointer
+    &:hover
+      color: #0ad69c
+
+.rightArrow
+  margin: 0 7px 0 12px
+  fill: #0ad69c
+  width: 6px
+  
+.profileBlock
+  margin-top: 5px
+  display: flex
+  align-items: center
+  @include pointer
+  &>img
+    margin-top: 3px
+    height: 22px
+    @include non_draggable
+    @include unselectable
+  &>span
+    white-space: nowrap
+    letter-spacing: 0.28px
+    font-size: 14px
+    margin: 0 9px
+
+.downArrow
+  height: 5px
+  fill: #01134E

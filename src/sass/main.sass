@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+@mixin non_draggable
+  pointer-events: none
+
+@mixin unselectable
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+@mixin pointer
+  cursor: pointer
+  
+@mixin transition
+  transition: all .3s
+
+@import 'reset.sass'
+@import 'page.sass'
+@import 'nav.sass'
+@import 'header.sass'
+@import 'usersList.sass'
+@import 'messangerContainer.sass'
+@import 'activeChat.sass'
+@import 'chat.sass'

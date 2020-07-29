@@ -1,0 +1,99 @@
+.leftContainer
+  overflow: hidden
+  min-width: 300px
+  border-right: 1px solid #EDF0F4
+  box-sizing: border-box
+  @include transition
+.usersList
+  width: 103%
+  display: flex
+  flex-direction: column
+  background-color: #ffffff
+  border-radius: 4px 0 0 4px
+  overflow-y: scroll
+  overflow-x: hidden
+  height: 100%
+  
+  &__item
+    box-sizing: border-box
+    display: flex
+    align-items: center
+    width: 100%
+    min-height: 91px
+    padding: 19px 21px
+    font-family: 'Roboto'
+    position: relative
+    background-color: #ffffff
+    &>img
+      width: 50px
+      @include non_draggable
+      @include unselectable
+    &_active
+      z-index: 1
+      background-color: #ffffff
+      box-shadow: 0px 5px 5px rgba(190, 200, 212, 0.2), 0px -5px 5px rgba(224, 224, 224, 0.15)
+    &:hover
+      background: #F9FAFC
+      @include pointer
+
+.itemBody
+  display: flex
+  justify-content: center
+  flex-direction: column
+  margin: -2px 0 0 14px
+.time
+  @include unselectable
+  position: absolute
+  right: 14px
+  top: 13px
+  letter-spacing: 0.428571px
+  color: #9BA0AD
+  font-size: 12px
+
+.itemHeader
+  display: flex
+  align-items: center
+  width: 100%
+
+.name
+  @include unselectable
+  font-family: 'Exo 2'
+  font-style: normal
+  font-weight: 500
+  font-size: 16px
+  line-height: 19px
+  letter-spacing: 0.571429px
+  color: #01134E
+  position: relative
+  height: 22px
+  margin-right: 14px
+
+.circle
+  display: none
+  right: -7px
+  top: 0px
+  position: absolute
+  background-color: #0AD69C;
+  width: 6px
+  height: 6px
+  border-radius: 100px
+  &_online
+    display: block
+
+.muteStatus
+  display: none
+  width: 8px
+  fill: #9BA0AD
+  &_muted
+    display: block
+
+.messageSlice
+  margin-top: 2px
+  font-size: 14px
+  line-height: 18px
+  color: #252F48
+  opacity: 0.43
+  width: 176px
+  text-overflow: ellipsis
+  overflow: hidden
+  white-space: nowrap

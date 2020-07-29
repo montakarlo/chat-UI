@@ -1,0 +1,80 @@
+body
+  width: 100%
+  min-height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #E5E5E5
+
+.pageContainer
+  @include transition
+  display: flex
+  width: 1022px
+  height: 768px
+  
+.burger
+  @include pointer
+  margin: 17px 25px
+  z-index: 100
+  height: 30px
+  fill: #0AD69C
+  position: fixed
+  display: none
+
+.checkBox
+  margin: 17px 25px
+  height: 30px
+  width: 30px
+  z-index: 100
+  position: fixed
+  display: none
+
+@media (max-width: 1024px)
+  .pageContainer
+    width: 100% !important
+
+@media (max-width: 900px)
+  .leftContainer
+    min-width: 270px !important
+  .message
+    &__text
+      width: 100% !important
+      margin-bottom: 16px !important
+
+@media (max-width: 740px)
+  header
+    padding: 0 25px !important
+    justify-content: flex-end !important
+  .navBlock
+    display: none !important
+  .pageContainer
+    width: 400px !important
+  .activeChat
+    display: none !important
+  nav
+    display: none !important
+    z-index: 4
+    position: fixed
+    height: 732px !important
+    max-height: 750px !important
+  .chatContainer
+    justify-content: center
+  .leftContainer
+    border-right: none !important
+    width: 100% !important
+  .chat
+    padding: 43px 0 !important
+  .usersList__item
+    box-sizing: border-box !important
+    padding: 0 20px !important
+  .messageSlice
+    width: 295px !important
+  .time
+    top: 17px !important
+    right: 25px !important
+  .burger
+    display: block
+  .checkBox:checked ~ nav
+    display: block !important
+  .navContainer
+    margin-top: 63px

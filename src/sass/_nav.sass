@@ -1,0 +1,77 @@
+nav
+  padding: 18px 0
+  background: #01134E
+  min-width: 80px
+  
+.navContainer
+  height: 440px
+  width: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.iconsContainer
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-direction: column
+  height: 328px
+  width: 100%
+  &__item
+    height: 48px
+    position: relative
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    @include pointer
+    &:hover .line
+      display: block
+    &:hover .icon
+      fill: rgba(255,255,255,1)
+
+.notification
+  display: none
+  right: 20px
+  top: 6px
+  width: 19px
+  height: 19px
+  border-radius: 100px
+  position: absolute
+  background-color: #2A74DB
+  justify-content: center
+  align-items: center
+  &>p
+    color: #ffffff
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: bold
+    font-size: 12px
+  &_unread
+    display: flex
+
+.line
+  display: none
+  left: 0
+  margin-top: 5px
+  position: absolute
+  width: 4px
+  height: 48px
+  background: #0AD69C
+  &_active
+    display: block
+
+.logo
+  height: 35px
+  width: 35px
+  margin-bottom: 58px
+  @include pointer
+  @include unselectable
+
+.icon
+  width: 20px
+  fill: rgba(255,255,255,0.5)
+  &_active
+    fill: rgba(255,255,255,1)
+  &_profile
+    width: 18px
