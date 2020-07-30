@@ -71,75 +71,6 @@ body {
   display: none;
 }
 
-@media (max-width: 1024px) {
-  .pageContainer {
-    width: 100% !important;
-  }
-}
-
-@media (max-width: 900px) {
-  .leftContainer {
-    min-width: 270px !important;
-  }
-  .message__text {
-    width: 100% !important;
-    margin-bottom: 16px !important;
-  }
-}
-
-@media (max-width: 740px) {
-  header {
-    padding: 0 25px !important;
-    justify-content: flex-end !important;
-  }
-  .navBlock {
-    display: none !important;
-  }
-  .pageContainer {
-    width: 400px !important;
-  }
-  .activeChat {
-    display: none !important;
-  }
-  nav {
-    display: none !important;
-    z-index: 4;
-    position: fixed;
-    height: 732px !important;
-    max-height: 750px !important;
-  }
-  .chatContainer {
-    justify-content: center;
-  }
-  .leftContainer {
-    border-right: none !important;
-    width: 100% !important;
-  }
-  .chat {
-    padding: 43px 0 !important;
-  }
-  .usersList__item {
-    box-sizing: border-box !important;
-    padding: 0 20px !important;
-  }
-  .messageSlice {
-    width: 295px !important;
-  }
-  .time {
-    top: 17px !important;
-    right: 25px !important;
-  }
-  .burger {
-    display: block;
-  }
-  .checkBox:checked ~ nav {
-    display: block !important;
-  }
-  .navContainer {
-    margin-top: 63px;
-  }
-}
-
 nav {
   padding: 18px 0;
   background: #01134E;
@@ -678,6 +609,75 @@ header {
   height: 556px;
   box-shadow: 0px 0px 30px rgba(153, 163, 174, 0.06);
   display: flex;
+}
+
+@media (max-width: 1024px) {
+  .pageContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .leftContainer {
+    min-width: 270px;
+  }
+  .message__text {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 740px) {
+  header {
+    padding: 0 25px;
+    justify-content: flex-end;
+  }
+  .navBlock {
+    display: none;
+  }
+  .pageContainer {
+    width: 400px;
+  }
+  .activeChat {
+    display: none;
+  }
+  nav {
+    display: none;
+    z-index: 4;
+    position: fixed;
+    height: 732px;
+    max-height: 750px;
+  }
+  .chatContainer {
+    justify-content: center;
+  }
+  .leftContainer {
+    border-right: none;
+    width: 100%;
+  }
+  .chat {
+    padding: 43px 0;
+  }
+  .usersList__item {
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
+  .messageSlice {
+    width: 295px;
+  }
+  .time {
+    top: 17px;
+    right: 25px;
+  }
+  .burger {
+    display: block;
+  }
+  .checkBox:checked ~ nav {
+    display: block;
+  }
+  .navContainer {
+    margin-top: 63px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
