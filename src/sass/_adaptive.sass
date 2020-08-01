@@ -47,3 +47,53 @@
     display: block 
   .navContainer
     margin-top: 63px
+    
+@media ( max-device-width: 740px )
+
+  header
+    position: fixed
+    box-sizing: border-box
+    width: 100%
+    padding: 0 25px 
+    justify-content: flex-end 
+  .navBlock
+    display: none 
+  .pageContainer
+    width: 100%
+    height: 100%
+  .activeChat
+    display: none 
+  nav
+    display: none 
+    z-index: 4
+    position: fixed
+    height: 732px 
+    max-height: 750px 
+    z-index: 101
+  .chatContainer
+    justify-content: center
+    height: 100%
+  .leftContainer
+    border-right: none 
+    width: 100% 
+  .chat
+    padding: 43px 0 0
+  .usersList
+    margin-top: 30px
+    &__item
+      box-sizing: border-box 
+      padding: 0 20px 
+  .messageSlice
+    width: 40%
+  .time
+    top: 17px 
+    right: 25px 
+  .burger
+    display: block
+    z-index: 102
+  .checkBox:checked ~ nav
+    display: block 
+  .navContainer
+    margin-top: 63px
+  .messangerContainer
+    height: 100vh
